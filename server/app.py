@@ -4,12 +4,18 @@ from flask_cors import CORS
 from db import db
 from routes import register_routes
 from models import User
+from dotenv import load_dotenv
+import os
 
 app = Flask(__name__)
 CORS(app)
+load_dotenv()
 
 # MySQL 연결 정보
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:helo2109!@localhost:3306/cbt_project'
+app.config['SQLALCHEMY_DATABASE_URI'] = (
+    f"mysql+pymysql://{os.getenv('DB_USER')}:{os.getenv('DB_PASSWORD')}"
+    f"@{os.getenv('DB_HOST')}:{os.getenv('DB_PORT')}/{os.getenv('DB_NAME')}"
+)
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 db.init_app(app)
