@@ -1,0 +1,88 @@
+body {
+  margin: 0;
+  font-family: 'Pretendard', 'Noto Sans KR', sans-serif;
+  background: linear-gradient(to bottom right, #f0f2f8, #e8eaf6);
+}
+
+.practice-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 20px;
+  max-width: 600px;
+  margin: 0 auto;
+  color: #333;
+}
+
+.practice-wrapper h2 {
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+
+.practice-wrapper p {
+  font-size: 15px;
+  margin-bottom: 24px;
+  text-align: center;
+  line-height: 1.6;
+}
+
+.practice-wrapper textarea,
+.practice-wrapper input[type="range"] {
+  width: 100%;
+  padding: 14px;
+  margin: 8px 0 20px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  font-size: 14px;
+  resize: vertical;
+  background-color: #fff;
+}
+
+.practice-wrapper label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 8px;
+  color: #444;
+  text-align: left;
+  width: 100%;
+}
+
+.practice-wrapper button {
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(to right, #a18cd1, #fbc2eb);
+  color: white;
+  border: none;
+  border-radius: 999px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+
+.practice-wrapper button:hover {
+  opacity: 0.9;
+}
+
+.practice-wrapper ul {
+  text-align: left;
+  padding-left: 20px;
+  margin-top: 24px;
+  font-size: 14px;
+}
+
+.practice-wrapper li {
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+p[style*="color: red"] {
+  background-color: #ffe5e5;
+  color: #c00;
+  padding: 12px;
+  border-radius: 10px;
+  margin-top: 10px;
+  font-weight: 500;
+  width: 100%;
+  text-align: center;
+}

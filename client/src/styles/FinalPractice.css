@@ -1,0 +1,73 @@
+.final-practice-container {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 30px;
+  border-radius: 12px;
+  background-color: #f9fbfd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.final-practice-container h2 {
+  color: #2a5d9f;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+}
+
+.final-practice-container p {
+  margin-bottom: 20px;
+  font-size: 1rem;
+  color: #333;
+}
+
+.final-practice-container input,
+.final-practice-container textarea,
+.final-practice-container select {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  resize: vertical;
+  box-sizing: border-box;
+}
+
+.final-practice-container input[type="range"] {
+  margin-top: 8px;
+}
+
+.final-practice-container label {
+  font-weight: 600;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.final-practice-container button {
+  background-color: #2a5d9f;
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.final-practice-container button:hover {
+  background-color: #1e4577;
+}
+
+.final-practice-container ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 20px;
+  background-color: #eef3f9;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.final-practice-container ul li {
+  margin-bottom: 10px;
+  line-height: 1.5;
+}

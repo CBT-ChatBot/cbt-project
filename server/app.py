@@ -3,6 +3,7 @@ from flask import Flask
 from flask_cors import CORS
 from db import db
 from routes import register_routes
+from routes.chat import chat_bp
 from models import User
 from dotenv import load_dotenv
 import os
