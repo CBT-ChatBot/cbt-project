@@ -6,6 +6,14 @@ import SignUpPage from '../pages/Signup';
 import LoginPage from '../pages/Login';
 import MainPage from '../pages/Mainpage';
 import DiaryChatPage from '../pages/DiaryChat';
+import CopingPractice from '../pages/CopingPractice';
+import FinalPractice from '../pages/FinalPractice';
+import FinalPracticeSummary from '../pages/FinalPracticeSummary';
+import PracticePage from '../pages/PracticePage';
+import SelectPracticePage from '../pages/SelectPracticePage';
+
+
+import AllPurposeCopingPlanPage from '../pages/skilltraining/AllPurposeCopingPlanPage';
 
 const AppRouter: React.FC = () => {
   return (
@@ -16,6 +24,11 @@ const AppRouter: React.FC = () => {
         <Route path="/login" element={<LoginPage />} />
         <Route path="/main" element={<MainPage />} />
         <Route path="/diary-chat" element={<DiaryChatPage />} />
+        <Route path="/coping" element={<CopingPractice/>}/>
+        <Route path="/finalpractice" element={<FinalPractice />} />
+        <Route path="/summary" element={<FinalPracticeSummary />} />
+        <Route path="/practice/:distortion" element={<PracticePage />} />
+        <Route path="/select-practice" element={<SelectPracticePage />} />
       </Routes>
     </Router>
   );

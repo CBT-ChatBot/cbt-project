@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import '../styles/Signup.css';
+import { register } from '../api/auth';
 
 const Signup: React.FC = () => {
   const navigate = useNavigate();
@@ -15,10 +16,20 @@ const Signup: React.FC = () => {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    console.log('회원가입 데이터:', form); // 백엔드 연결 전까지 확인용
+
+    const response = await register({
+      name: form.name,
+      email:form.email,
+      password: form.password,
+      age : parseInt(form.age),
+    })
+
+    alert(response.message);
+    if (response.message.includes('성공')) {
     navigate('/login'); // 회원가입 후 로그인 페이지로 이동
+    }
   };
 
   return (
